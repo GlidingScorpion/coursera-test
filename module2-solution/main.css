@@ -1,0 +1,183 @@
+
+
+* {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+}
+
+h1  {
+
+    text-align: center;
+    margin: 20px 
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        float: left;
+        
+       
+    }
+
+    .col-lg-1 {
+        width: 8.33%;
+      }
+      .col-lg-2 {
+        width: 16.66%;
+      }
+      .col-lg-3 {
+        width: 25%;
+      }
+      .col-lg-4 {
+        width: 33.33%;
+      }
+      .col-lg-5 {
+        width: 41.66%;
+      }
+      .col-lg-6 {
+        width: 50%;
+      }
+      .col-lg-7 {
+        width: 58.33%;
+      }
+      .col-lg-8 {
+        width: 66.66%;
+      }
+      .col-lg-9 {
+        width: 74.99%;
+      }
+      .col-lg-10 {
+        width: 83.33%;
+      }
+      .col-lg-11 {
+        width: 91.66%;
+      }
+      .col-lg-12 {
+        width: 100%;
+      }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+    }
+     
+    .col-md-1 {
+      width: 8.33%;
+    }
+    .col-md-2 {
+      width: 16.66%;
+    }
+    .col-md-3 {
+      width: 25%;
+    }
+    .col-md-4 {
+      width: 33.33%;
+    }
+    .col-md-5 {
+      width: 41.66%;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-7 {
+      width: 58.33%;
+    }
+    .col-md-8 {
+      width: 66.66%;
+    }
+    .col-md-9 {
+      width: 74.99%;
+    }
+    .col-md-10 {
+      width: 83.33%;
+    }
+    .col-md-11 {
+      width: 91.66%;
+    }
+    .col-md-12 {
+      width: 105.5%;   /*proper alignment of 3rd column which wouldnt work on 100%*/
+    }
+  }
+
+/********** Small devices only **********/
+
+@media (max-width: 767px) {
+    
+    .col-sm-12 {
+        width: 100%;
+    }
+
+}
+
+/*Margin from left and right of page to match the spaces between section*/
+
+.row{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+section {
+
+
+    border: solid black 1px;
+    background-color: rgba(173, 92, 37, 0.301);
+    height: 220px; /*Taken approximately*/
+    padding: 10px;  /*so that content is displayed properly*/
+    text-align: center;
+    overflow: auto;  /*helps with content going out of container by applying scroll bars*/
+    position: relative;  /*changing position to relative (from default: static) so absolute positioning can be used*/
+    
+}
+
+.content {
+    
+    margin: 20px; /*margin around the section*/
+    margin-bottom: 20px;
+    padding-top: 60px; /*space for title menu lables*/
+    width: 90%;   /* width will be 100% of the container(container used here is div)*/
+    
+    
+    
+}
+
+/*Common Styling to all titles*/
+
+p {
+    position: absolute;  /*absolute position to it's container (in this case it is section element) */
+    top: 0px;   /*from top of the container, position at 0 pixels*/
+    right: 0px; /*from right of the container, position the element at 0 pixels*/
+    height: 40px; /*height of title tag*/
+    width: 200px;
+    border-left: solid black 1px;
+    border-bottom: solid black 1px;
+    padding: 10px;
+    
+}
+
+/*Individual Styling to titles*/
+
+#title1 {
+        background-color: rgba(240, 150, 16, 0.774);  
+        font-weight: bold ; 
+        font-size: 120%;
+}
+
+#title2 {
+    background-color: rgba(206, 19, 19, 0.582);  
+    font-weight: bold ; 
+    font-size: 120%;
+}
+
+#title3 {
+    background-color: rgba(78, 141, 138, 0.726);  
+    font-weight: bold ; 
+    font-size: 120%;
+}
